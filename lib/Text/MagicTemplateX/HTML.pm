@@ -1,5 +1,5 @@
 package Text::MagicTemplateX::HTML;
-$VERSION = 2.11;
+$VERSION = 2.2;
 __END__
 
 =head1 NAME
@@ -11,8 +11,14 @@ Text::MagicTemplateX::HTML - HTML extensions for Text::MagicTemplate used in a H
     $mt = new Text::MagicTemplate { -markers    => 'HTML',
                                     -behaviours => 'HTML' };
     # that explicitly means
-    $mt = new Text::MagicTemplate { -markers    => [qw(<!--{ / }-->)],
-                                    -behaviours => [qw(SCALAR REF CODE TableTiler ARRAY HASH FillInForm)] };
+    $mt = new Text::MagicTemplate { -markers    => [ qw( <!--{ / }--> ) ],
+                                    -behaviours => [ qw( SCALAR
+                                                         REF
+                                                         CODE
+                                                         TableTiler
+                                                         ARRAY
+                                                         HASH
+                                                         FillInForm ) ] };
     # or simply
     $mt = new HTML::MagicTemplate;
 
@@ -84,7 +90,13 @@ If your OS does not have any 'make' support, just copy the content of the /lib d
 
 This is the shortcut for the complete HTML collection of behaviour extensions that defines the following behaviours:
 
-    SCALAR REF CODE TableTiler ARRAY HASH FillInForm
+    SCALAR
+    REF
+    CODE
+    TableTiler
+    ARRAY
+    HASH
+    FillInForm
 
 See L<Text::MagicTemplateX::Core> for details about I<SCALAR> I<REF> I<CODE> I<ARRAY> and I<HASH> behaviours.
 
@@ -104,7 +116,9 @@ magic generation of HTML table. No need to create and use a HTML::TableTiler obj
 
 The bidimensional array:
 
-    $matrix_generating_a_table = [ [1..3], [4..6], [7..9] ];
+    $matrix_generating_a_table = [ [1..3], 
+                                   [4..6], 
+                                   [7..9] ];
 
 The template could be as simple as a simple label with the same identifier of the bidimensional array:
 
@@ -178,7 +192,12 @@ See L<HTML::TableTiler> for details about this module.
 
 Note: if your template don't need this specific behaviour you can avoid its loading by explicitly omitting it:
 
-    $mt = new HTML::MagicTemplate { -behaviours => [qw(SCALAR REF CODE ARRAY HASH FillInForm)] };
+    $mt = new HTML::MagicTemplate { -behaviours => [ qw( SCALAR
+                                                         REF
+                                                         CODE
+                                                         ARRAY
+                                                         HASH
+                                                         FillInForm ) ] };
 
 B<Warning>: since this behaviour check for a bidimensional ARRAY, it must be checked BEFORE the ARRAY behaviour extension in order to work.
 
@@ -215,13 +234,19 @@ One useful application of this behaviour is when a user submits an HTML form wit
 You can use this behaviour to fill the form with default values too, To do this, just create a new query object and fill it with the default param that you want in the form:
 
     $query = new CGI;
-    $query->param( name => 'John', surname => 'Smith', ...);
+    $query->param( name    => 'John', 
+                   surname => 'Smith', ...);
 
 See L<HTML::FillInForm> for details about this module.
 
 Note: if your template don't need this specific behaviour you can avoid its loading by explicitly omitting it:
 
-    $mt = new HTML::MagicTemplate { -behaviours => [qw(SCALAR REF CODE TableTiler ARRAY HASH)] };
+    $mt = new HTML::MagicTemplate { -behaviours => [ qw( SCALAR
+                                                         REF
+                                                         CODE
+                                                         TableTiler
+                                                         ARRAY
+                                                         HASH ) ] };
 
 =back
 
@@ -229,7 +254,21 @@ Note: if your template don't need this specific behaviour you can avoid its load
 
 =head1 SEE ALSO
 
-L<Text::MagicTemplate|Text::MagicTemplate>, L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>, L<HTML::TableTiler|HTML::TableTiler>, L<HTML::FillInForm|HTML::FillInForm>, L<HTML::MagicTemplate|HTML::MagicTemplate>, L<Text::MagicTemplateX::Core|Text::MagicTemplateX::Core>, L<Text::MagicTemplateX|Text::MagicTemplateX>.
+=item * L<Text::MagicTemplate|Text::MagicTemplate>
+
+=item * L<Text::MagicTemplate::Zone|Text::MagicTemplate::Zone>
+
+=item * L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
+
+=item * L<Text::MagicTemplateX|Text::MagicTemplateX>
+
+=item * L<Text::MagicTemplateX::Core|Text::MagicTemplateX::Core>
+
+=item * L<HTML::TableTiler|HTML::TableTiler>
+
+=item * L<HTML::FillInForm|HTML::FillInForm>
+
+=item * L<HTML::MagicTemplate|HTML::MagicTemplate>
 
 =head1 SUPPORT and FEEDBACK
 
@@ -250,3 +289,5 @@ This software may not be modified without first notifying the author (this is to
 This code is provided on an "As Is'' basis, without warranty, expressed or implied. The author disclaims all warranties with regard to this software, including all implied warranties of merchantability and fitness, in no event shall the author, be liable for any special, indirect or consequential damages or any damages whatsoever including but not limited to loss of use, data or profits. By using this software you agree to indemnify the author from any liability that might arise from it is use. Should this code prove defective, you assume the cost of any and all necessary repairs, servicing, correction and any other costs arising directly or indrectly from it is use.
 
 The copyright notice must remain fully intact at all times. Use of this software or its output, constitutes acceptance of these terms.
+
+

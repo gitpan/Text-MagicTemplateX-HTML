@@ -1,11 +1,12 @@
 package HTML::MagicTemplate;
-$VERSION = 2.11;
+$VERSION = 2.2;
 use Text::MagicTemplate;
 push @ISA, qw(Text::MagicTemplate);
 use strict;
 
 sub default_markers    { [ 'HTML' ] }
 sub default_behaviours { [ 'HTML' ] }
+
 __END__
 
 =head1 NAME
@@ -15,8 +16,10 @@ HTML::MagicTemplate - HTML wrapper for Text::MagicTemplate used in a HTML enviro
 =head1 SYNOPSIS
 
     $mt = new HTML::MagicTemplate;
+    
     # is an alias of
-    $mt = new Text::MagicTemplate { -markers => 'HTML', -behaviours => 'HTML' };
+    $mt = new Text::MagicTemplate { -markers    => 'HTML', 
+                                    -behaviours => 'HTML' };
 
 =head1 DESCRIPTION
 
@@ -46,7 +49,18 @@ L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
 
 =head1 SEE ALSO
 
-L<Text::MagicTemplateX::HTML|Text::MagicTemplateX::HTML>, L<Text::MagicTemplateX|Text::MagicTemplateX>, L<Text::MagicTemplate|Text::MagicTemplate>, L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>.
+
+=item * L<Text::MagicTemplate|Text::MagicTemplate>
+
+=item * L<Text::MagicTemplate::Zone|Text::MagicTemplate::Zone>
+
+=item * L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
+
+=item * L<Text::MagicTemplateX|Text::MagicTemplateX>
+
+=item * L<Text::MagicTemplate::Core|Text::MagicTemplate::Core>
+
+=item * L<Text::MagicTemplateX::HTML|Text::MagicTemplateX::HTML>
 
 =head1 SUPPORT and FEEDBACK
 
