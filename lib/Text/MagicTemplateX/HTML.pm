@@ -1,5 +1,5 @@
 package Text::MagicTemplateX::HTML;
-$VERSION = 1.04;
+$VERSION = 1.05;
 __END__
 
 =head1 NAME
@@ -180,7 +180,7 @@ Note: if your template don't need this specific behaviour you can avoid its load
 
     $mt = new HTML::MagicTemplate { -behaviours => [qw(SCALAR REF CODE ARRAY HASH FillInForm)] };
 
-B<Warning>: since this behaviour check for a idimensional ARRAY, it must be checked BEFORE the ARRAY behaviour extension in order to work.
+B<Warning>: since this behaviour check for a bidimensional ARRAY, it must be checked BEFORE the ARRAY behaviour extension in order to work.
 
 =back
 
@@ -205,7 +205,7 @@ The CGI object in your code:
 If you want to fill a form with the param in the $my_query, just transform the form into a block giving it the same identifier.
 
     <!--{my_query}-->
-    <form behaviour="my.cgi">
+    <form action="my.cgi">
     ...
     </form>
     <!--{/my_query}-->
@@ -232,6 +232,8 @@ Note: if your template don't need this specific behaviour you can avoid its load
 L<Text::MagicTemplate|Text::MagicTemplate>, L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>, L<HTML::TableTiler|HTML::TableTiler>, L<HTML::FillInForm|HTML::FillInForm>, L<HTML::MagicTemplate|HTML::MagicTemplate>, L<Text::MagicTemplateX::Core|Text::MagicTemplateX::Core>, L<Text::MagicTemplateX|Text::MagicTemplateX>.
 
 =head1 SUPPORT and FEEDBACK
+
+More information at http://perl.4pro.net/?Text::MagicTemplateX::HTML.
 
 I would like to have just a line of feedback from everybody who tries or actually uses this software. Feel free to write me any comment, suggestion or request.
 
