@@ -1,3 +1,7 @@
+# behaviour extension
+# Text::MagicTemplateX::HTML distribution version 2.11
+
+
 use HTML::TableTiler ;
 
 sub

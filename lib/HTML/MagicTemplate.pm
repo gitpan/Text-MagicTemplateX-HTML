@@ -1,5 +1,5 @@
 package HTML::MagicTemplate;
-$VERSION = 2.1;
+$VERSION = 2.11;
 use Text::MagicTemplate;
 push @ISA, qw(Text::MagicTemplate);
 use strict;
