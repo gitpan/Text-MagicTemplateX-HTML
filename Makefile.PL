@@ -8,7 +8,7 @@ WriteMakefile
  	AUTHOR           => 'Domizio Demichelis <dd\@4pro.net>',
     ABSTRACT         => 'HTML extended behaviours for Text::MagicTemplate',
 	) : (),
-    PREREQ_PM        => { Text::MagicTemplate => 2.0,
+    PREREQ_PM        => { Text::MagicTemplate => 2.1,
                           HTML::TableTiler    => 1.0,
                           HTML::FillInForm    => 1.0 }
 

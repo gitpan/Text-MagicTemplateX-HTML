@@ -1,5 +1,5 @@
 package HTML::MagicTemplate;
-$VERSION = 1.05;
+$VERSION = 2.1;
 use Text::MagicTemplate;
 push @ISA, qw(Text::MagicTemplate);
 use strict;
@@ -50,9 +50,9 @@ L<Text::MagicTemplateX::HTML|Text::MagicTemplateX::HTML>, L<Text::MagicTemplateX
 
 =head1 SUPPORT and FEEDBACK
 
-More information at http://perl.4pro.net/?HTML::MagicTemplate.
+I would like to have just a line of feedback from everybody who tries or actually uses this module. PLEASE, write me any comment, suggestion or request. ;-)
 
-I would like to have just a line of feedback from everybody who tries or actually uses this module. Feel free to write me any comment, suggestion or request.
+More information at http://perl.4pro.net/?HTML::MagicTemplate.
 
 =head1 AUTHOR
 

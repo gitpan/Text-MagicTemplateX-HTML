@@ -17,7 +17,7 @@ Installation
 
 0.  Prerequisites:
 - Perl version >= 5.005
-- Text::MagicTemplate >= 2.0
+- Text::MagicTemplate >= 2.1
 - HTML::TableTiler >= 1.0
 - HTML::FillInForm >= 1.0
 
@@ -37,4 +37,4 @@ content of the /lib dir into perl installation site dir, maintaining the same hi
 
 --
 Domizio Demichelis <dd@4pro.net>
-2002-11-10
+2003-08-29

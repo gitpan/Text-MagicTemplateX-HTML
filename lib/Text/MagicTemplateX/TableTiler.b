@@ -2,11 +2,11 @@ use HTML::TableTiler ;
 
 sub
 {
-    my ($s, $t, $v, $l) = @_;
-    ref $v eq 'ARRAY'
+    my ($s, $z) = @_;
+    ref $z->value eq 'ARRAY'
     && eval
     {
         local $SIG{__DIE__};
-        HTML::TableTiler::tile_table( $v, $t->{content} && \$t->{content}, $t->{attributes} )
+        HTML::TableTiler::tile_table( $z->value, $z->content && \$z->{content}, $z->{attributes} )
     }
 }

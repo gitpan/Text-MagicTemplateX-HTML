@@ -1,5 +1,5 @@
 package Text::MagicTemplateX::HTML;
-$VERSION = 1.05;
+$VERSION = 2.1;
 __END__
 
 =head1 NAME
@@ -49,7 +49,7 @@ L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
 =item Prerequisites
 
     perl >= 5.005
-    Text::MagicTemplate >= 2.0
+    Text::MagicTemplate >= 2.1
     HTML::TableTiler >= 1.0
     HTML::FillInForm >= 1.0
 
@@ -233,9 +233,9 @@ L<Text::MagicTemplate|Text::MagicTemplate>, L<Text::MagicTemplate::Tutorial|Text
 
 =head1 SUPPORT and FEEDBACK
 
-More information at http://perl.4pro.net/?Text::MagicTemplateX::HTML.
+I would like to have just a line of feedback from everybody who tries or actually uses this module. PLEASE, write me any comment, suggestion or request. ;-)
 
-I would like to have just a line of feedback from everybody who tries or actually uses this software. Feel free to write me any comment, suggestion or request.
+More information at http://perl.4pro.net/?Text::MagicTemplateX::HTML.
 
 =head1 AUTHOR
 
