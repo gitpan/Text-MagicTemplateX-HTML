@@ -1,5 +1,5 @@
 package Text::MagicTemplateX::HTML;
-$VERSION = '1.01';
+$VERSION = '1.02';
 __END__
 
 =head1 NAME
