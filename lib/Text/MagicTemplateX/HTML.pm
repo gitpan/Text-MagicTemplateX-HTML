@@ -1,5 +1,5 @@
 package Text::MagicTemplateX::HTML;
-$VERSION = '1.0';
+$VERSION = '1.01';
 __END__
 
 =head1 NAME
@@ -56,7 +56,7 @@ L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
 
 =back
 
-=head1 EXTENDED BEHAVIOURS
+=head1 HTML BEHAVIOURS
 
 =over
 
