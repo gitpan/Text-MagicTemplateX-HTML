@@ -1,0 +1,10 @@
+MANIFEST
+Makefile.PL
+README
+lib/HTML/MagicTemplate.pm
+lib/Text/MagicTemplateX/FillInForm.b
+lib/Text/MagicTemplateX/HTML.b
+lib/Text/MagicTemplateX/HTML.pm
+lib/Text/MagicTemplateX/TableTiler.b
+t/01_TableTiler.t
+t/02_FillInForm.t

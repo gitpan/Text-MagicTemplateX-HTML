@@ -1,0 +1,40 @@
+Text::MagicTemplateX::HTML README File
+======================================
+
+
+Description
+-----------
+
+Text::MagicTemplateX::HTML is a collection of behaviour extensions for
+Text::MagicTemplate useful when used in a HTML environment. It adds a couple of
+magic HTML specific behaviours to Text::MagicTemplate default behaviours: just
+create and use the MagicTemplate object as usual, to have a trasparent interface
+to HTML::TableTiler and HTML::FillInForm too.
+
+
+Installation
+------------
+
+0.  Prerequisites:
+- Perl version >= 5.005
+- Text::MagicTemplate >= 2.0
+- HTML::TableTiler >= 1.0
+- HTML::FillInForm >= 1.0
+
+
+1. Standard installation
+- from the directory where this file is located, type:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+
+2. Manual installation
+- if your OS does not have any 'make' support, just copy the
+content of the /lib dir into perl installation site dir, maintaining the same hierarchy
+
+--
+Domizio Demichelis <dd@4pro.net>
+2002-11-10
