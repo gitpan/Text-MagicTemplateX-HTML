@@ -1,5 +1,5 @@
 package Text::MagicTemplateX::HTML;
-$VERSION = '1.02';
+$VERSION = '1.03';
 __END__
 
 =head1 NAME
@@ -42,17 +42,37 @@ L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
 
 =back
 
-=head1 PREREQUISITES
+=head2 Installation
 
 =over
 
-=item * perl >= 5.005
+=item Prerequisites
 
-=item * Text::MagicTemplate >= 2.0
+    perl >= 5.005
+    Text::MagicTemplate >= 2.0
+    HTML::TableTiler >= 1.0
+    HTML::FillInForm >= 1.0
 
-=item * HTML::TableTiler >= 1.0
+=item CPAN
 
-=item * HTML::FillInForm >= 1.0
+If you want to install this extensions collections and prerequisites plus Text::MagicTemplate, all in one easy step:
+
+    perl -MCPAN -e 'install Bundle::Text::MagicTemplate'
+
+=item Standard installation
+
+From the directory where this file is located, type:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+B<Note>: this installs just Text::MagicTemplateX::HTML distribution and its prerequisitesdoes but does not install L<Text::MagicTemplate|Text::MagicTemplate>.
+
+=item Manual installation
+
+If your OS does not have any 'make' support, just copy the content of the /lib dir into perl installation site dir, maintaining the same hierarchy.
 
 =back
 
