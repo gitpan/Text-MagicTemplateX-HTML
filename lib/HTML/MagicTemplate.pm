@@ -1,5 +1,5 @@
 package HTML::MagicTemplate;
-$VERSION = 2.2;
+$VERSION = 2.21;
 use Text::MagicTemplate;
 push @ISA, qw(Text::MagicTemplate);
 use strict;
@@ -49,6 +49,7 @@ L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
 
 =head1 SEE ALSO
 
+=over
 
 =item * L<Text::MagicTemplate|Text::MagicTemplate>
 
@@ -61,6 +62,8 @@ L<Text::MagicTemplate::Tutorial|Text::MagicTemplate::Tutorial>
 =item * L<Text::MagicTemplate::Core|Text::MagicTemplate::Core>
 
 =item * L<Text::MagicTemplateX::HTML|Text::MagicTemplateX::HTML>
+
+=back
 
 =head1 SUPPORT and FEEDBACK
 
